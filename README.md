@@ -2,8 +2,6 @@
 
 > Upload a PDF and get instant, accurate answers to your questions using GenAI-powered document intelligence.
 
-![App Screenshot](./Screenshot%202025-06-10%20015340.png)
-
 ---
 
 ## ✨ Overview
@@ -58,7 +56,7 @@
 
 ## 📸 Demo Screenshot
 
-![PDF Q&A Streamlit App](./Screenshot%202025-06-10%20015340.png)
+![Screenshot 2025-06-10 015340](https://github.com/user-attachments/assets/53eec4c8-0e18-426e-bfe2-3a1bf7713993)
 
 ---
 
