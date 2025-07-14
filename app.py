@@ -38,7 +38,7 @@ with st.sidebar:
         """, unsafe_allow_html=True)
 
 st.markdown(f"""
-    <h1 style='color: {"black" if theme == "Light" else "white"};'>📄 PDF Q&A App</h1>
+    <h1 style='color: {"black" if theme == "Light" else "white"};'>📄 QueryNest</h1>
     <p style='color: {"#333" if theme == "Light" else "#ddd"}; font-size: 18px; margin-top: -10px;'>
         Ask anything from your uploaded PDF!
     </p>
