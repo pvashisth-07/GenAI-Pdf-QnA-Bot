@@ -54,9 +54,10 @@
 
 ---
 
-## 📸 Demo Screenshot
+## 📸 Demo Video
 
-![Screenshot 2025-06-10 015340](https://github.com/user-attachments/assets/53eec4c8-0e18-426e-bfe2-3a1bf7713993)
+[Uploading streamlit-app-2025-07-14-15-07-48.webm…]()
+
 
 ---
 
