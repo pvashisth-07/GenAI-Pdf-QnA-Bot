@@ -37,9 +37,12 @@ with st.sidebar:
             </style>
         """, unsafe_allow_html=True)
 
-st.title("📄 PDF Q&A App")
-st.caption("Ask anything from your uploaded PDF!")
-
+st.markdown(f"""
+    <h1 style='color: {"black" if theme == "Light" else "white"};'>📄 PDF Q&A App</h1>
+    <p style='color: {"#333" if theme == "Light" else "#ddd"}; font-size: 18px; margin-top: -10px;'>
+        Ask anything from your uploaded PDF!
+    </p>
+""", unsafe_allow_html=True)
 if uploaded_file:
     with st.spinner("Processing PDF..."):
         with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp_file:
@@ -71,7 +74,19 @@ Instructions:
         output_parser = StrOutputParser()
         chain = prompt | llm | output_parser
 
-        st.success("PDF processed successfully! You can now ask questions.")
+        st.markdown(f"""
+    <div style='
+        background-color: {"#d4edda" if theme == "Light" else "#225522"};
+        color: {"#155724" if theme == "Light" else "#d4edda"};
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 15px;
+        border: 1px solid {"#c3e6cb" if theme == "Light" else "#88cc88"};
+        font-weight: bold;
+    '>
+        ✅ PDF processed successfully! You can now ask questions.
+    </div>
+""", unsafe_allow_html=True)
 
         question = st.text_input("Ask a question from the PDF:")
         if question:
